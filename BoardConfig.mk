@@ -34,7 +34,7 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 TARGET_NO_BOOTLOADER := true
 
 TARGET_KERNEL_SOURCE := kernel/lge/gee
-TARGET_KERNEL_CONFIG := gee_defconfig
+TARGET_KERNEL_CONFIG := ubuntu_gee_defconfig
 
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -86,6 +86,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_geehrc
 
 TARGET_RECOVERY_FSTAB = device/lge/geehrc/ramdisk/fstab.geehrc
+PRODUCT_COPY_FILES += device/lge/geehrc/ramdisk/twrp.fstab:recovery/root/etc/twrp.fstab
 RECOVERY_FSTAB_VERSION = 2
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 23068672 # 22M

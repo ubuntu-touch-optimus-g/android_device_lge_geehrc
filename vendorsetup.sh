@@ -15,4 +15,5 @@
 #
 
 add_lunch_combo full_geehrc-userdebug
+add_lunch_combo aosp_geehrc-userdebug
 add_lunch_combo omni_geehrc-userdebug
