@@ -42,6 +42,10 @@ PRODUCT_COPY_FILES += \
         device/lge/geehrc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin
 
 PRODUCT_COPY_FILES += \
+        device/lge/geehrc/ramdisk/init_wlan.sh:system/etc/init_wlan.sh \
+        device/lge/geehrc/ramdisk/unblock_wakelock.sh:system/etc/unblock_wakelock.sh
+
+PRODUCT_COPY_FILES += \
         device/lge/geehrc/ramdisk/fetch-swv:system/bin/fetch-swv
 
 PRODUCT_COPY_FILES += \
